@@ -67,11 +67,14 @@ initial value can not be changed. */
 var x = 10;
 
 for (let x = 0; x < 20; x++) {};
-/* scope variable is destroyed when let/const are used and outer scope value( that is global scope here) its old value
-or global/outer scope value is reassigned after the scope ends.
+/* 
+    A new variable x is made when 'let' is used if inner scope has the same variable name as the outer scope and the inner variable is destroyed
+    immediately after its scope however the outer scope / global x still exist.
 */
 console.log(x); // output -> 10
 for (var x = 0; x < 20; x++) {};
-/* end of for loop scope means, this local scoped x should be destroyed and the global x should give value 10 but it 
-will give 20 in the global scope now. The old value is not saved and the scoped value is overriden */
+/*
+    if same named inner scope variable is declared inside with 'var' then javascript do not create any new local variable since the name and
+    the declaration (var) both are same so it do not create any new variable and use the same variable and that is why we see 20 as output.
+*/
 console.log(x); // output -> 20
