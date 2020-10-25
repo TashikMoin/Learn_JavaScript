@@ -4,7 +4,7 @@ console.log('Hi' + 'Tashik');
 var name = 'tashik';
 var age = 21;
 console.log("Hi " + name + " Your age is " + age); // without string literals ` `
-console.log(`Hi ${name} Your age is ${age}`); // with string literals ` ` 
+console.log(`Hi ${name} Your age is ${age}`); // with string template literals ` ` 
 console.log(123);
 console.log(true);
 var greeting = 'Hello';
