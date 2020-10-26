@@ -8,7 +8,7 @@ const age = 45;
 const hasKids = true;
 // Null type
 const car = null;
-// Undefined type
+// Undefined type 
 let test;
 // Symbol type (introduced in ES6 version)
 const sym = Symbol();
